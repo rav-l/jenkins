@@ -23,7 +23,7 @@ pipeline {
                         mail (
                             to: 'ravindu.w7@gmail.com',
                             subject: "Jenkins: Unit and Integration Tests Stage Successful",
-                            body: " Unit and Integration Tests stage has been successful. Please find the logs attached. \nConsole Output: \${env.BUILD_URL}console",
+                            body: " Unit and Integration Tests stage has been successful. Please find the logs attached. \nConsole Output: ${env.BUILD_URL}console",
                             mimeType: 'text/html'
                         )
                     }
@@ -51,7 +51,7 @@ pipeline {
                         mail (
                             to: 'ravindu.w7@gmail.com',
                             subject: "Jenkins: Security Scan Stage Successful",
-                            body: "The Security Scan stage has been successful. Please find the logs attached. \nConsole Output: \${env.BUILD_URL}console",
+                            body: "The Security Scan stage has been successful. Please find the logs attached. \nConsole Output: ${env.BUILD_URL}console",
                             mimeType: 'text/html'
                         )
                     }
