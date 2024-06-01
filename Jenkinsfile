@@ -23,7 +23,7 @@ pipeline {
                         mail (
                             to: 'ravindu.w7@gmail.com',
                             subject: "Jenkins: Unit and Integration Tests Stage Successful",
-                            body: " Unit and Integration Tests stage has been successful. Please find the logs attached. \nConsole Output: ${env.BUILD_URL}console",
+                            body: "The Unit and Integration Tests stage has been successful. Please find the logs attached. \nConsole Output: ${env.BUILD_URL}console",
                             mimeType: 'text/html'
                         )
                     }
